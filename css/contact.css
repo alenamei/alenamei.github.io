@@ -1,0 +1,106 @@
+.Contact {
+    color: #ffffff;
+    background: #6f8f8f00; 
+    margin: 2% 5%;
+    display: inline-block;
+    width: 90%;
+  }
+  
+  @keyframes fade-in-2 {
+    0% {
+      opacity: 0;
+      transform: translateY(100%);
+    }
+    100% {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
+  #th3 {
+    font-family: Inter, Source Sans Pro, Helvetica Neue, Arial, sans-serif;
+    font-size: clamp(3.75rem, 7.735vw + 1.937rem, 8.125rem);
+    font-weight: 900;
+    letter-spacing: -0.02em;
+    text-align: left;
+    position: relative;
+    pointer-events: none;
+    padding-left: 5%;
+    margin-bottom: 10%;
+    height: 3.5vh;
+    width: 100%;
+    color: rgb(36, 56, 49);
+  }
+  
+  #th3::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(to right, rgb(36, 56, 49) 0%, #ffffff 50%, transparent 50%, transparent 100%);
+    pointer-events: none;
+    transform: translateX(-100%);
+  }
+  
+  #parts {
+    height: 15vh;
+    background-color: #6f8f8f00;
+    width: 100%;
+    margin-bottom: 10%;
+    margin-top: 20px; 
+  }
+  
+  .split-container {
+    display: flex;
+    height: 100%;
+  }
+  
+  .split-item {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 24px;
+    color: #ffffff;
+    opacity: 0;
+    margin-top: 10%;
+    background-color: #6f8f8f00;
+    font-family: Inter,Source Sans Pro,Helvetica Neue,Arial,sans-serif;
+    font-size: clamp(0.75rem, 1.501vw + 0.362rem, 1.563rem);
+  }
+  
+  .split-item:first-child {
+    flex-basis: 60%;
+    margin-left: 6%;
+    margin-top: 0%;
+  }
+  
+  .split-item:last-child {
+    flex-basis: 40%;
+    margin-top: 0%;
+  }
+  
+  .social-icons {
+    display: flex;
+    justify-content: center;
+    margin-right: 10%;
+    align-items: center;
+  }
+  
+  .content-after-br {
+    margin-top: 10px; 
+  }
+  
+  .social-icons a {
+    color: #469081ad;
+    font-size: 3rem;
+    margin: 0 10px;
+    text-decoration: none;
+    transition: color 0.3s ease-in-out, cursor 0.3s ease-in-out;
+  }
+  
+  .social-icons a:hover {
+    color: #c2e8e8;
+    cursor: pointer;
+  }

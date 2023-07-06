@@ -1,0 +1,150 @@
+/* Footer Menu */
+#footer-menu {
+    position: relative;
+    bottom: 0;
+    width: 100%;
+    height: 65px;
+    background-color: #00000000;
+    color: #84aaaa;
+    font-size: 1vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 9;
+  }
+  
+  #footer-menu ul {
+    max-width: 800px;
+    width: 100%;
+    height: 50%;
+    margin: 0 auto;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 9;
+    list-style: none;
+  }
+  
+  #footer-menu a {
+    color: #719292;
+    font-size: 1rem;
+    text-decoration: none;
+  }
+  
+  #footer-menu a:hover {
+    color: #8ce8e8;
+  }
+  
+  #footer-menu .footer-link {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin-top: 2.5%;
+  }
+  
+  #scrollToTopButton {
+    position: absolute;
+    right: -10px;
+    bottom: 150%;
+    transform: translateY(50%);
+    padding: 10px;
+    background-color: #333333;
+    color: #8ce8e8;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: width 0.3s ease-in-out;
+    width: 60px;
+    text-align: center;
+  }
+  
+  #scrollToTopButton:hover {
+    width: 110px;
+    padding: 14px;
+  }
+  
+  #scrollToTopButton:hover::before{
+    display: none;
+  }
+  
+  #scrollToTopButton::after{
+    content: '';
+    display: block;
+    position: relative;
+    width: 0;
+    height: 0;
+    margin-top: 50%;
+    border-left: 6px solid transparent;
+    border-right: 6px solid transparent;
+    border-bottom: 8px solid #8ce8e8;
+    margin: auto;
+    top: calc(50% + 2px); 
+    transition: opacity 0.3s ease-in-out;
+  }
+  
+  #scrollToTopButton:hover::after{
+    border-left: 0px solid transparent;
+    border-right: 0px solid transparent;
+    border-bottom: 0px solid #8ce8e8;
+    content: 'BACK TO TOP';
+    font-size: 0.6rem;
+    position: absolute;
+    top: 30%;
+    left: 25%;
+    transform: translate(-50%, -50%);
+    opacity: 1;
+    white-space: nowrap;
+    font-family: Inter, "Source Sans Pro", "Helvetica Neue", Arial, sans-serif;
+  }
+  
+  #footer-menu{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  #footer-menu .copyright {
+    font-size: clamp(0.75rem, 0.331vw + 0.672rem, 0.938rem);
+    line-height: clamp(1.125rem, 0.166vw + 1.086rem, 1.219rem);
+    justify-content: center;
+    align-items: center;
+  }
+  
+  #font-move {
+    --c: #1095c1; 
+    --s: .08em;  
+    line-height: 1.0em;
+    padding-bottom: calc(2.1*var(--s));
+    background: 
+      conic-gradient(from 135deg at top   ,var(--c) 90deg,#0000 0) 
+        left 0 bottom var(--s)/calc(2*var(--s)) var(--s) repeat-x,
+      conic-gradient(from -45deg at bottom,var(--c) 90deg,#0000 0) 
+        bottom 0 left var(--s)/calc(2*var(--s)) var(--s) repeat-x;
+    --_m:
+      linear-gradient(#000 0 0) content-box,
+      linear-gradient(#000 0 0) 50%/var(--_p,0%) padding-box no-repeat;
+    -webkit-mask: var(--_m);
+            mask: var(--_m);
+    transition: .5s;
+  }
+
+  #font-move:hover {
+    --_p: 100%;
+    color: var(--c);
+  }
+
+#fontmove {
+  position: absolute;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: #0a4441;
+  font-size: clamp(2.188rem, 2.194vw + 1.62rem, 3.375rem);
+  letter-spacing: 4px;
+  cursor: pointer;
+  padding-bottom: 3px;
+  margin: 0;
+  font-family: 'Poppins', sans-serif;
+  font-weight: 900;
+}
